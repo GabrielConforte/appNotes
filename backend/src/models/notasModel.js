@@ -1,6 +1,5 @@
 
 import Sequelize from 'sequelize';
-//import {categoriasModel} from './categoriasModel.js';
 
 export const notasModel = sequelize => {
   const Notas = sequelize.define('notes', {
@@ -34,10 +33,9 @@ export const notasModel = sequelize => {
         defaultValue:0,
       },
   });
-  //const Categorias = categoriasModel(sequelize);
+
   sequelize.sync('safe');
-/*   Notas.belongsTo(Categorias, { foreignKey: 'categoriaId'});
-  Categorias.hasMany(Notas, {foreignKey: 'categoriaId' }); */
+
   return Notas;
 };
 

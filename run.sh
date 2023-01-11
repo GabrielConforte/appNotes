@@ -3,5 +3,5 @@
 cd backend
 node src/index.js &
 
-cd ../app-notes
+cd appNotes
 npm start
